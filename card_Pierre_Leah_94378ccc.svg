@@ -19,10 +19,10 @@
   <text x="30" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="17" fill="#FFFFFF">Leah.Pierre@houstontexans.com</text>
   
   <!-- Phone Label -->
-  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="end">Office</text>
+  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="end">Mobile</text>
   
   <!-- Phone Number -->
-  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF" text-anchor="end">832-667-2348</text>
+  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF" text-anchor="end">281-744-9906</text>
   
   <!-- Top Right Image -->
   
