@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Digital Business Card — Houston Texans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f9fafb;color:#1f2937;min-height:100vh;-webkit-font-smoothing:antialiased}
+.wrap{max-width:540px;margin:0 auto;padding:24px 20px}
+.hdr{text-align:center;padding:28px 0 24px;border-bottom:3px solid #ed0028;margin-bottom:32px}
+.hdr img{height:52px;margin-bottom:20px;display:block;margin-left:auto;margin-right:auto}
+.hdr h1{font-size:1.75rem;font-weight:700;color:#021018;margin:0 0 8px;letter-spacing:-0.02em}
+.hdr p{font-size:1.05rem;color:#6b7280;margin:0;line-height:1.5}
+label{display:block;font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#6b7280;margin-bottom:8px}
+input[type=email]{width:100%;padding:16px 18px;border:2px solid #e5e7eb;border-radius:12px;font-size:1.1rem;font-family:inherit;margin-bottom:14px;-webkit-appearance:none}
+input[type=email]:focus{outline:none;border-color:#0080c6}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 24px;background:#021018;color:#fff;border:none;border-radius:12px;font-size:1.1rem;font-weight:600;font-family:inherit;cursor:pointer;-webkit-appearance:none;text-decoration:none}
+.btn:hover{opacity:0.9}
+.btn-secondary{background:#fff;color:#021018;border:2px solid #e5e7eb}
+.btn-secondary:hover{border-color:#021018}
+.btn-wallet{background:#000;color:#fff;padding:18px 24px;font-size:1.15rem;box-shadow:0 2px 8px rgba(0,0,0,0.15);border:none;margin-bottom:14px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;font-size:0.95rem;font-weight:600}
+.badge-approved{background:#ecfdf5;color:#065f46}
+.badge-pending{background:#fffbeb;color:#92400e}
+.badge-rejected{background:#fef2f2;color:#991b1b}
+.card-wrap{background:#fff;border-radius:16px;padding:12px;box-shadow:0 4px 6px rgba(0,0,0,0.07),0 12px 28px rgba(0,0,0,0.12);margin-bottom:24px}
+.card-wrap img{width:100%;border-radius:8px;display:block}
+.info-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:16px 20px;margin-bottom:20px}
+.info-box p{font-size:0.9rem;color:#1e40af;margin:0;line-height:1.5}
+.info-box .title{font-size:0.95rem;font-weight:700;margin-bottom:6px}
+.status-card{text-align:center;padding:32px 16px;background:#fff;border-radius:16px;border:1px solid #e5e7eb;margin-top:28px}
+.status-icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem}
+.error{background:#fef2f2;color:#991b1b;padding:16px 18px;border-radius:10px;font-size:1rem;margin-top:20px;display:none}
+.hide{display:none}
+.ft{text-align:center;margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb}
+.ft img{height:18px;opacity:0.25;margin-bottom:6px}
+.ft p{font-size:0.7rem;color:#9ca3af}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hdr">
+    <img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston_Texans_Logo_RGB_WRD_MRK%20FC.png" alt="Houston Texans">
+    <h1>My Digital Business Card</h1>
+    <p>Enter your work email to check your card status.</p>
+  </div>
+
+  <!-- Email form -->
+  <div id="bc-form">
+    <label for="bc-email">Work email</label>
+    <input type="email" id="bc-email" placeholder="your.name@houstontexans.com" />
+    <button id="bc-btn" class="btn" onclick="checkStatus()">Check my card</button>
+  </div>
+
+  <!-- Error -->
+  <div id="bc-error" class="error"></div>
+
+  <!-- Approved -->
+  <div id="bc-approved" class="hide">
+    <div style="margin-bottom:20px"><span class="badge badge-approved">&#10003; Approved</span></div>
+
+    <div class="info-box">
+      <p class="title">&#128241; How to save your card</p>
+      <p id="bc-instructions">Long press or right click on the card image below to download it to your device.</p>
+    </div>
+
+    <div id="bc-wallet-spot" style="margin-bottom:14px"></div>
+
+    <div class="card-wrap">
+      <img id="bc-card-img" src="" alt="Your business card" />
+    </div>
+
+    <p id="bc-name" style="font-size:1.4rem;font-weight:700;color:#021018;margin:0 0 4px"></p>
+    <p id="bc-title" style="font-size:1rem;color:#6b7280;margin:0 0 20px"></p>
+
+    <a id="bc-landing" href="" target="_blank" class="btn" style="margin-bottom:14px">View your contact page &#8594;</a>
+    <p style="font-size:0.9rem;color:#9ca3af;text-align:center">Your QR code links to <a id="bc-landing-text" href="" target="_blank" style="color:#0080c6;font-weight:600">your contact page</a></p>
+  </div>
+
+  <!-- Pending -->
+  <div id="bc-pending" class="hide">
+    <div class="status-card">
+      <div class="status-icon" style="background:#fffbeb">&#9203;</div>
+      <p id="bc-pending-name" style="font-size:1.3rem;font-weight:700;color:#021018;margin:0 0 8px"></p>
+      <p style="font-size:1.05rem;color:#6b7280;line-height:1.6">Your business card is being reviewed by the admin team. Check back soon!</p>
+    </div>
+  </div>
+
+  <!-- Rejected -->
+  <div id="bc-rejected" class="hide">
+    <div class="status-card">
+      <div class="status-icon" style="background:#fef2f2">&#10007;</div>
+      <p id="bc-rejected-name" style="font-size:1.3rem;font-weight:700;color:#021018;margin:0 0 8px"></p>
+      <p id="bc-rejected-reason" style="font-size:1.05rem;color:#6b7280;line-height:1.6"></p>
+    </div>
+  </div>
+
+  <!-- Not found -->
+  <div id="bc-notfound" class="hide">
+    <div class="status-card">
+      <div class="status-icon" style="background:#f3f4f6">?</div>
+      <p style="font-size:1.05rem;color:#6b7280;line-height:1.6">No submission found for this email. Please use the employee submission form or contact your admin.</p>
+    </div>
+  </div>
+
+  <div class="ft">
+    <img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston_Texans_Logo_RGB_WRD_MRK%20FC.png" alt="">
+    <p>Houston Texans &#183; Reliant Stadium &#183; Houston, Texas</p>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var API='https://texans-bizcard-api.texansdigital.workers.dev';
+  var GH='https://texansdigital.github.io/texans-business-cards';
+  var isApple=/iPhone|iPad|iPod|Macintosh|Mac OS/.test(navigator.userAgent);
+
+  function hideAll(){
+    ['bc-error','bc-approved','bc-pending','bc-rejected','bc-notfound'].forEach(function(id){
+      document.getElementById(id).style.display='none';
+      document.getElementById(id).classList.add('hide');
+    });
+    var spot=document.getElementById('bc-wallet-spot');
+    if(spot) spot.innerHTML='';
+  }
+
+  function showResult(id){
+    var el=document.getElementById(id);
+    el.classList.remove('hide');
+    el.style.display='block';
+  }
+
+  function addWalletButton(submissionId){
+    if(!isApple) return;
+    var spot=document.getElementById('bc-wallet-spot');
+    if(!spot) return;
+    var btn=document.createElement('a');
+    btn.href=API+'/wallet/'+submissionId;
+    btn.className='btn btn-wallet';
+    btn.textContent='Add to Apple Wallet';
+    spot.appendChild(btn);
+    document.getElementById('bc-instructions').textContent='Tap the button below to add your card to Apple Wallet for quick sharing. You can also long press or right click on the card image to download it directly.';
+  }
+
+  window.checkStatus=function(){
+    hideAll();
+    var email=document.getElementById('bc-email').value.trim().toLowerCase();
+    if(!email) return;
+
+    var btn=document.getElementById('bc-btn');
+    btn.disabled=true;
+    btn.style.opacity='0.6';
+    btn.textContent='Checking...';
+
+    fetch(API+'/status/'+encodeURIComponent(email))
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(!d.success||!d.data){
+          showResult('bc-notfound');
+          return;
+        }
+
+        var sub=d.data;
+        var name=(sub.first_name||'')+' '+(sub.last_name||'');
+
+        if(sub.status==='approved'){
+          document.getElementById('bc-name').textContent=name.trim();
+          document.getElementById('bc-title').textContent=sub.job_title||'';
+          document.getElementById('bc-card-img').src=sub.card_url||'';
+          var sid=(sub.id||'').slice(0,8);
+          if(sid){
+            document.getElementById('bc-landing').href=GH+'/p/'+sid+'.html';
+            document.getElementById('bc-landing-text').href=GH+'/p/'+sid+'.html';
+          }
+          if(sub.id) addWalletButton(sub.id);
+          showResult('bc-approved');
+        }else if(sub.status==='pending'){
+          document.getElementById('bc-pending-name').textContent=name.trim();
+          showResult('bc-pending');
+        }else if(sub.status==='rejected'){
+          document.getElementById('bc-rejected-name').textContent=name.trim();
+          document.getElementById('bc-rejected-reason').textContent=sub.rejection_reason
+            ?'Reason: '+sub.rejection_reason+'. Please contact your admin to resubmit.'
+            :'Your submission was not approved. Please contact your admin for details.';
+          showResult('bc-rejected');
+        }
+      })
+      .catch(function(){
+        var err=document.getElementById('bc-error');
+        err.textContent='Connection error. Please try again.';
+        err.style.display='block';
+      })
+      .finally(function(){
+        btn.disabled=false;
+        btn.style.opacity='1';
+        btn.textContent='Check my card';
+      });
+  };
+
+  document.getElementById('bc-email').addEventListener('keypress',function(e){
+    if(e.key==='Enter'){e.preventDefault();checkStatus();}
+  });
+
+  // Auto-check if email is in URL
+  var params=new URLSearchParams(window.location.search);
+  var emailParam=params.get('email');
+  if(emailParam){
+    document.getElementById('bc-email').value=emailParam;
+    checkStatus();
+  }
+})();
+</script>
+</body>
+</html>
