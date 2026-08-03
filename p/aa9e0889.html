@@ -105,17 +105,16 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpFbWlseSBNYWJyb3VrDQpOOk1hYnJvdWs7RW1pbHk7OzsNCk9SRzpIb3VzdG9uIFRleGFucztUaWNrZXRpbmcNClRJVExFOk1lbWJlcnNoaXAgU2VydmljZXMgQWR2aXNvcg0KRU1BSUw6ZW1pbHkubWFicm91a0Bob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIzODkNClRFTDtUWVBFPUNFTEw6KzEtODMyLTY2Ny0yMzg5DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpYLVNPQ0lBTFBST0ZJTEU7VFlQRT1saW5rZWRpbjpodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vZW1pbHktbWFicm91aw0KRU5EOlZDQVJE')));
-    try{
-      window.location.href='data:text/vcard;charset=utf-8,'+encodeURIComponent(vc);
-    }catch(e){
-      var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
-      var u=URL.createObjectURL(b);
-      var a=document.createElement('a');
-      a.href=u;a.download='Emily_Mabrouk.vcf';
-      document.body.appendChild(a);a.click();
-      document.body.removeChild(a);URL.revokeObjectURL(u);
-    }
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpFbWlseSBNYWJyb3VrDQpOOk1hYnJvdWs7RW1pbHk7OzsNCk9SRzpIb3VzdG9uIFRleGFucztUaWNrZXRpbmcNClRJVExFOk1lbWJlcnNoaXAgU2VydmljZXMgQWR2aXNvcg0KRU1BSUw6ZW1pbHkubWFicm91a0Bob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIzODkNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NClgtU09DSUFMUFJPRklMRTtUWVBFPWxpbmtlZGluOmh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9lbWlseS1tYWJyb3VrDQpFTkQ6VkNBUkQ=')));
+    var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
+    var u=URL.createObjectURL(b);
+    var a=document.createElement('a');
+    a.href=u;
+    a.download='Emily_Mabrouk.vcf';
+    a.style.display='none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(u);},1000);
     var t=document.getElementById('toast');
     t.classList.add('show');
     setTimeout(function(){t.classList.remove('show')},3000);
