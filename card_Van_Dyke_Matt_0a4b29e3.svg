@@ -16,7 +16,7 @@
   <text x="30" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Email</text>
   
   <!-- Email -->
-  <text x="30" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF">Matt.Vandyke@houstontexans.com</text>
+  <text x="30" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF">Matt.VanDyke@houstontexans.com</text>
   
   <!-- Phone Label -->
   <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="end">Mobile</text>
