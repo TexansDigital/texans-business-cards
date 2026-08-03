@@ -7,7 +7,7 @@
   <text x="570" y="50" font-family="TexSans-Regular, Arial, sans-serif" font-size="18" fill="#021018" text-anchor="end">www.lsse.net</text>
   
   <!-- Name -->
-  <text x="30" y="170" font-family="TexSans-Black, Arial Black, sans-serif" font-size="41" fill="#021018">David Fletcher</text>
+  <text x="30" y="170" font-family="TexSans-Black, Arial Black, sans-serif" font-size="40" fill="#021018">David Fletcher</text>
   
   <!-- Job Title -->
   <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="28" fill="#021018">General Manager</text>
@@ -19,10 +19,10 @@
   <text x="30" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#021018">David.Fletcher@lsse.net</text>
   
   <!-- Phone Label -->
-  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#021018" text-anchor="end">Office</text>
+  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#021018" text-anchor="end">Mobile</text>
   
   <!-- Phone Number -->
-  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#021018" text-anchor="end">832-667-2146</text>
+  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#021018" text-anchor="end">281-733-5565</text>
   
   <!-- Top Right Image -->
   
