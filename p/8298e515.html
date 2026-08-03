@@ -77,11 +77,11 @@
         </div>
         <div><div class="l">Email</div><div class="v">Lauren.Martin@houstontexans.com</div></div>
       </a>
-      <a href="tel:+18326703408" class="cr" onclick="tr('click_phone')">
+      <a href="tel:+18326672028" class="cr" onclick="tr('click_phone')">
         <div class="ci">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
         </div>
-        <div><div class="l">Office</div><div class="v">832-670-3408</div></div>
+        <div><div class="l">Office</div><div class="v">832-667-2028</div></div>
       </a>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
@@ -99,17 +99,16 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpMYXVyZW4gTWFydGluDQpOOk1hcnRpbjtMYXVyZW47OzsNCk9SRzpIb3VzdG9uIFRleGFucztEaWdpdGFsDQpUSVRMRTpEaWdpdGFsIFBsYXRmb3JtcyBDb29yZGluYXRvcg0KRU1BSUw6bGF1cmVuLm1hcnRpbkBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjcwLTM0MDgNClRFTDtUWVBFPUNFTEw6KzEtODMyLTY3MC0zNDA4DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
-    try{
-      window.location.href='data:text/vcard;charset=utf-8,'+encodeURIComponent(vc);
-    }catch(e){
-      var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
-      var u=URL.createObjectURL(b);
-      var a=document.createElement('a');
-      a.href=u;a.download='Lauren_Martin.vcf';
-      document.body.appendChild(a);a.click();
-      document.body.removeChild(a);URL.revokeObjectURL(u);
-    }
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpMYXVyZW4gTWFydGluDQpOOk1hcnRpbjtMYXVyZW47OzsNCk9SRzpIb3VzdG9uIFRleGFucztEaWdpdGFsDQpUSVRMRTpEaWdpdGFsIFBsYXRmb3JtcyBDb29yZGluYXRvcg0KRU1BSUw6bGF1cmVuLm1hcnRpbkBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIwMjgNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
+    var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
+    var u=URL.createObjectURL(b);
+    var a=document.createElement('a');
+    a.href=u;
+    a.download='Lauren_Martin.vcf';
+    a.style.display='none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(u);},1000);
     var t=document.getElementById('toast');
     t.classList.add('show');
     setTimeout(function(){t.classList.remove('show')},3000);
