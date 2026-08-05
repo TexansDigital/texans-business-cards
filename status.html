@@ -76,7 +76,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
     <div style="margin-bottom:16px"><span class="badge badge-approved">&#10003; Approved</span></div>
 
     <p id="bc-name" style="font-size:1.3rem;font-weight:700;color:#021018;margin:0 0 2px"></p>
-    <p id="bc-title" style="font-size:0.95rem;color:#6b7280;margin:0 0:16px"></p>
+    <p id="bc-title" style="font-size:0.95rem;color:#6b7280;margin:0 0 16px"></p>
 
     <div class="info-box" style="margin-top:16px">
       <p class="ib-title">&#128241; How to save your card</p>
@@ -185,7 +185,17 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
         if(sub.status==='approved'){
           document.getElementById('bc-name').textContent=name.trim();
           document.getElementById('bc-title').textContent=sub.job_title||'';
-          document.getElementById('bc-card-img').src=sub.card_url||'';
+          // The card filename is stable across regenerations, so a browser that
+          // has seen it before keeps serving the old image — employees were
+          // being shown pre-update cards on desktop while phones (no cache)
+          // showed the current one. Tie the URL to updated_at so it changes
+          // exactly when the card does, and stays cacheable otherwise.
+          var cardUrl=sub.card_url||'';
+          if(cardUrl){
+            var stamp=sub.updated_at||sub.approved_at||'';
+            if(stamp) cardUrl+=(cardUrl.indexOf('?')===-1?'?':'&')+'v='+encodeURIComponent(stamp);
+          }
+          document.getElementById('bc-card-img').src=cardUrl;
           var sid=(sub.id||'').slice(0,8);
           if(sid){
             document.getElementById('bc-landing').href=GH+'/p/'+sid+'.html';
