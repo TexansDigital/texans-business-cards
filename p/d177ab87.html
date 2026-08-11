@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Marc Vandermeer',
-    'department':'Broadcast',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Marc Vandermeer','department':'Broadcast','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Marc Vandermeer','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Marc Vandermeer</h1>
     <p class="sub">Vice President, Broadcasting and Voice of the Houston Texans</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Broadcast</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNYXJjIFZhbmRlcm1lZXINCk46VmFuZGVybWVlcjtNYXJjOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7QnJvYWRjYXN0DQpUSVRMRTpWaWNlIFByZXNpZGVudCwgQnJvYWRjYXN0aW5nIGFuZCBWb2ljZSBvZiB0aGUgSG91c3RvbiBUZXhhbnMNCkVNQUlMOm1hcmMudmFuZGVybWVlckBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIyMTgNClRFTDtUWVBFPUNFTEw6KzEtNzEzLTUwNC04MTIwDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNYXJjIFZhbmRlcm1lZXINCk46VmFuZGVybWVlcjtNYXJjOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlZpY2UgUHJlc2lkZW50LCBCcm9hZGNhc3RpbmcgYW5kIFZvaWNlIG9mIHRoZSBIb3VzdG9uIFRleGFucw0KRU1BSUw6bWFyYy52YW5kZXJtZWVyQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjIxOA0KVEVMO1RZUEU9Q0VMTDorMS03MTMtNTA0LTgxMjANClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
