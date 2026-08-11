@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Jonathan Joia',
-    'department':'Sports Medicine',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Jonathan Joia','department':'Sports Medicine','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Jonathan Joia','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Jonathan Joia</h1>
     <p class="sub">Athletic Training Apprentice</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Sports Medicine</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKb25hdGhhbiBKb2lhDQpOOkpvaWE7Sm9uYXRoYW47OzsNCk9SRzpIb3VzdG9uIFRleGFucztTcG9ydHMgTWVkaWNpbmUNClRJVExFOkF0aGxldGljIFRyYWluaW5nIEFwcHJlbnRpY2UNCkVNQUlMOmpvbmF0aGFuLmpvaWFAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY3Ny0yMTY5DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKb25hdGhhbiBKb2lhDQpOOkpvaWE7Sm9uYXRoYW47OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6QXRobGV0aWMgVHJhaW5pbmcgQXBwcmVudGljZQ0KRU1BSUw6am9uYXRoYW4uam9pYUBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjc3LTIxNjkNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
