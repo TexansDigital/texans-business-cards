@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Evan Madsen',
-    'department':'Ticket Sales',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Evan Madsen','department':'Ticket Sales','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Evan Madsen','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Evan Madsen</h1>
     <p class="sub">Account Executive, Business Development</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Ticket Sales</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpFdmFuIE1hZHNlbg0KTjpNYWRzZW47RXZhbjs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zO1RpY2tldCBTYWxlcw0KVElUTEU6QWNjb3VudCBFeGVjdXRpdmUsIEJ1c2luZXNzIERldmVsb3BtZW50DQpFTUFJTDpldmFuLm1hZHNlbkBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIxNjUNClRFTDtUWVBFPUNFTEw6KzEtODMyLTk2My02NTE5DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpFdmFuIE1hZHNlbg0KTjpNYWRzZW47RXZhbjs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zDQpUSVRMRTpBY2NvdW50IEV4ZWN1dGl2ZSwgQnVzaW5lc3MgRGV2ZWxvcG1lbnQNCkVNQUlMOmV2YW4ubWFkc2VuQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjE2NQ0KVEVMO1RZUEU9Q0VMTDorMS04MzItOTYzLTY1MTkNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
