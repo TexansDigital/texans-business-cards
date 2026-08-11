@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Brandon Anselmi',
-    'department':'Ticketing',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Brandon Anselmi','department':'Ticketing','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Brandon Anselmi','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Brandon Anselmi</h1>
     <p class="sub">Club Seat Membership Coordinator</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Ticketing</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpCcmFuZG9uIEFuc2VsbWkNCk46QW5zZWxtaTtCcmFuZG9uOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7VGlja2V0aW5nDQpUSVRMRTpDbHViIFNlYXQgTWVtYmVyc2hpcCBDb29yZGluYXRvcg0KRU1BSUw6YnJhbmRvbi5hbnNlbG1pQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjEzNw0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpCcmFuZG9uIEFuc2VsbWkNCk46QW5zZWxtaTtCcmFuZG9uOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOkNsdWIgU2VhdCBNZW1iZXJzaGlwIENvb3JkaW5hdG9yDQpFTUFJTDpicmFuZG9uLmFuc2VsbWlAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTM3DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
