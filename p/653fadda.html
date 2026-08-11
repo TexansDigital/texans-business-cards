@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Jake Flaherty',
-    'department':'Business Analytics and Technology',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Jake Flaherty','department':'Business Analytics and Technology','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Jake Flaherty','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Jake Flaherty</h1>
     <p class="sub">Data Operations Analyst</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Business Analytics and Technology</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKYWtlIEZsYWhlcnR5DQpOOkZsYWhlcnR5O0pha2U7OzsNCk9SRzpIb3VzdG9uIFRleGFucztCdXNpbmVzcyBBbmFseXRpY3MgYW5kIFRlY2hub2xvZ3kNClRJVExFOkRhdGEgT3BlcmF0aW9ucyBBbmFseXN0DQpFTUFJTDpqYWtlLmZsYWhlcnR5QGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1DRUxMOisxLTI1Mi0yMTgtMTI5Ng0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKYWtlIEZsYWhlcnR5DQpOOkZsYWhlcnR5O0pha2U7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6RGF0YSBPcGVyYXRpb25zIEFuYWx5c3QNCkVNQUlMOmpha2UuZmxhaGVydHlAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPUNFTEw6KzEtMjUyLTIxOC0xMjk2DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
