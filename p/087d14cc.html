@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Steve Cargile',
-    'department':'College Scouting',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Steve Cargile','department':'College Scouting','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Steve Cargile','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Steve Cargile</h1>
     <p class="sub">Director of Pro Scouting</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">College Scouting</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTdGV2ZSBDYXJnaWxlDQpOOkNhcmdpbGU7U3RldmU7OzsNCk9SRzpIb3VzdG9uIFRleGFucztDb2xsZWdlIFNjb3V0aW5nDQpUSVRMRTpEaXJlY3RvciBvZiBQcm8gU2NvdXRpbmcNCkVNQUlMOnN0ZXZlLmNhcmdpbGVAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMjYyDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTdGV2ZSBDYXJnaWxlDQpOOkNhcmdpbGU7U3RldmU7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6RGlyZWN0b3Igb2YgUHJvIFNjb3V0aW5nDQpFTUFJTDpzdGV2ZS5jYXJnaWxlQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjI2Mg0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
