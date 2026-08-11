@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Lucy Vega Quintero',
-    'department':'Finance',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Lucy Vega Quintero','department':'Finance','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Lucy Vega Quintero','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Lucy Vega Quintero</h1>
     <p class="sub">Accounts Payable Analyst</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Finance</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpMdWN5IFZlZ2EgUXVpbnRlcm8NCk46VmVnYSBRdWludGVybztMdWN5Ozs7DQpPUkc6SG91c3RvbiBUZXhhbnM7RmluYW5jZQ0KVElUTEU6QWNjb3VudHMgUGF5YWJsZSBBbmFseXN0DQpFTUFJTDpsdWN5LnZlZ2FAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTYxDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpMdWN5IFZlZ2EgUXVpbnRlcm8NCk46VmVnYSBRdWludGVybztMdWN5Ozs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOkFjY291bnRzIFBheWFibGUgQW5hbHlzdA0KRU1BSUw6bHVjeS52ZWdhQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjE2MQ0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
