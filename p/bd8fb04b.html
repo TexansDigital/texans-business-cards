@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Ryan Records',
-    'department':'Digital',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Ryan Records','department':'Digital','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Ryan Records','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Ryan Records</h1>
     <p class="sub">Senior Social Media Manager</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Digital</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpSeWFuIFJlY29yZHMNCk46UmVjb3JkcztSeWFuOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7RGlnaXRhbA0KVElUTEU6U2VuaW9yIFNvY2lhbCBNZWRpYSBNYW5hZ2VyDQpFTUFJTDpyeWFuLnJlY29yZHNAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMjQwDQpURUw7VFlQRT1DRUxMOisxLTgzMi02MzMtMDIxOQ0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpSeWFuIFJlY29yZHMNCk46UmVjb3JkcztSeWFuOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlNlbmlvciBTb2NpYWwgTWVkaWEgTWFuYWdlcg0KRU1BSUw6cnlhbi5yZWNvcmRzQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjI0MA0KVEVMO1RZUEU9Q0VMTDorMS04MzItNjMzLTAyMTkNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
