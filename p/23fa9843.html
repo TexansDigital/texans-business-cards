@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'William Cornell',
-    'department':'Digital',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'William Cornell','department':'Digital','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'William Cornell','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>William Cornell</h1>
     <p class="sub">Digital Content Producer</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Digital</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpXaWxsaWFtIENvcm5lbGwNCk46Q29ybmVsbDtXaWxsaWFtOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7RGlnaXRhbA0KVElUTEU6RGlnaXRhbCBDb250ZW50IFByb2R1Y2VyDQpFTUFJTDp3aWxsaWFtLmNvcm5lbGxAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMzEwDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpXaWxsaWFtIENvcm5lbGwNCk46Q29ybmVsbDtXaWxsaWFtOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOkRpZ2l0YWwgQ29udGVudCBQcm9kdWNlcg0KRU1BSUw6d2lsbGlhbS5jb3JuZWxsQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjMxMA0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
