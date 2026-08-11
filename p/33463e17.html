@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Steve Johnson',
-    'department':'Facilities & Strategic Development',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Steve Johnson','department':'Facilities & Strategic Development','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Steve Johnson','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Steve Johnson</h1>
     <p class="sub">Chief Planning Officer</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Facilities &amp; Strategic Development</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTdGV2ZSBKb2huc29uDQpOOkpvaG5zb247U3RldmU7OzsNCk9SRzpIb3VzdG9uIFRleGFucztGYWNpbGl0aWVzICYgU3RyYXRlZ2ljIERldmVsb3BtZW50DQpUSVRMRTpDaGllZiBQbGFubmluZyBPZmZpY2VyDQpFTUFJTDpzdGV2ZS5qb2huc29uQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjA0OA0KVEVMO1RZUEU9Q0VMTDorMS0yODEtNzcwLTA4ODcNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTdGV2ZSBKb2huc29uDQpOOkpvaG5zb247U3RldmU7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6Q2hpZWYgUGxhbm5pbmcgT2ZmaWNlcg0KRU1BSUw6c3RldmUuam9obnNvbkBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIwNDgNClRFTDtUWVBFPUNFTEw6KzEtMjgxLTc3MC0wODg3DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
