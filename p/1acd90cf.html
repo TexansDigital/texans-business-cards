@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Andre Davis',
-    'department':'Team Enrichment',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Andre Davis','department':'Team Enrichment','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Andre Davis','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Andre Davis</h1>
     <p class="sub">Team Development Coordinator</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Team Enrichment</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpBbmRyZSBEYXZpcw0KTjpEYXZpcztBbmRyZTs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zO1RlYW0gRW5yaWNobWVudA0KVElUTEU6VGVhbSBEZXZlbG9wbWVudCBDb29yZGluYXRvcg0KRU1BSUw6YW5kcmUuZGF2aXNAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMzA2DQpURUw7VFlQRT1DRUxMOisxLTgzMi03MDctODQyOA0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpBbmRyZSBEYXZpcw0KTjpEYXZpcztBbmRyZTs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zDQpUSVRMRTpUZWFtIERldmVsb3BtZW50IENvb3JkaW5hdG9yDQpFTUFJTDphbmRyZS5kYXZpc0Bob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIzMDYNClRFTDtUWVBFPUNFTEw6KzEtODMyLTcwNy04NDI4DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
