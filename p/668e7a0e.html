@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Megan Sullivan',
-    'department':'Ticketing',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Megan Sullivan','department':'Ticketing','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Megan Sullivan','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Megan Sullivan</h1>
     <p class="sub">VIP Services Manager</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Ticketing</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNZWdhbiBTdWxsaXZhbg0KTjpTdWxsaXZhbjtNZWdhbjs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zO1RpY2tldGluZw0KVElUTEU6VklQIFNlcnZpY2VzIE1hbmFnZXINCkVNQUlMOm1lZ2FuLnN1bGxpdmFuQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjE4OA0KVEVMO1RZUEU9Q0VMTDorMS00NzktNjE2LTQyMDYNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNZWdhbiBTdWxsaXZhbg0KTjpTdWxsaXZhbjtNZWdhbjs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zDQpUSVRMRTpWSVAgU2VydmljZXMgTWFuYWdlcg0KRU1BSUw6bWVnYW4uc3VsbGl2YW5AaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTg4DQpURUw7VFlQRT1DRUxMOisxLTQ3OS02MTYtNDIwNg0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
