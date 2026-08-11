@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Pat Moorer',
-    'department':'Strength and Conditioning',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Pat Moorer','department':'Strength and Conditioning','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Pat Moorer','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Pat Moorer</h1>
     <p class="sub">Assistant Strength and Conditioning Coach</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Strength and Conditioning</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpQYXQgTW9vcmVyDQpOOk1vb3JlcjtQYXQ7OzsNCk9SRzpIb3VzdG9uIFRleGFucztTdHJlbmd0aCBhbmQgQ29uZGl0aW9uaW5nDQpUSVRMRTpBc3Npc3RhbnQgU3RyZW5ndGggYW5kIENvbmRpdGlvbmluZyBDb2FjaA0KRU1BSUw6cGF0Lm1vb3JlckBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIyNzQNClRFTDtUWVBFPUNFTEw6KzEtODMyLTM4OS02MDY3DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpQYXQgTW9vcmVyDQpOOk1vb3JlcjtQYXQ7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6QXNzaXN0YW50IFN0cmVuZ3RoIGFuZCBDb25kaXRpb25pbmcgQ29hY2gNCkVNQUlMOnBhdC5tb29yZXJAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMjc0DQpURUw7VFlQRT1DRUxMOisxLTgzMi0zODktNjA2Nw0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
