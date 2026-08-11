@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Podcasd Team',
-    'department':'Content',
     'brand':'lovb'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Podcasd Team','department':'Content','brand':'lovb'});}
+  function tr(n){gtag('event',n,{'employee_name':'Podcasd Team','brand':'lovb'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/LOVB%20logo%20solo%20blue.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Podcasd Team</h1>
     <p class="sub">Producer</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Content</div>
     <span class="org">LOVB Houston Volleyball</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpQb2RjYXNkIFRlYW0NCk46VGVhbTtQb2RjYXNkOzs7DQpPUkc6TE9WQiBIb3VzdG9uIFZvbGxleWJhbGw7Q29udGVudA0KVElUTEU6UHJvZHVjZXINCkVNQUlMOnBvZGNhc3RAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTU1NS0xMDAzDQpURUw7VFlQRT1DRUxMOisxLTcxMy01NTUtMTAwMw0KVVJMOmh0dHBzOi8vd3d3LmxvdmJob3VzdG9uLmNvbS8NCkVORDpWQ0FSRA==')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpQb2RjYXNkIFRlYW0NCk46VGVhbTtQb2RjYXNkOzs7DQpPUkc6TE9WQiBIb3VzdG9uIFZvbGxleWJhbGwNClRJVExFOlByb2R1Y2VyDQpFTUFJTDpwb2RjYXN0QGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi01NTUtMTAwMw0KVEVMO1RZUEU9Q0VMTDorMS03MTMtNTU1LTEwMDMNClVSTDpodHRwczovL3d3dy5sb3ZiaG91c3Rvbi5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
