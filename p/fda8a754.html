@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Joseph Vernon',
-    'department':'Football Management',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Joseph Vernon','department':'Football Management','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Joseph Vernon','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Joseph Vernon</h1>
     <p class="sub">Senior Vice President, Football Operations</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Football Management</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKb3NlcGggVmVybm9uDQpOOlZlcm5vbjtKb3NlcGg7OzsNCk9SRzpIb3VzdG9uIFRleGFucztGb290YmFsbCBNYW5hZ2VtZW50DQpUSVRMRTpTZW5pb3IgVmljZSBQcmVzaWRlbnQsIEZvb3RiYWxsIE9wZXJhdGlvbnMNCkVNQUlMOmpvZS52ZXJub25AaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMzYzDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKb3NlcGggVmVybm9uDQpOOlZlcm5vbjtKb3NlcGg7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6U2VuaW9yIFZpY2UgUHJlc2lkZW50LCBGb290YmFsbCBPcGVyYXRpb25zDQpFTUFJTDpqb2UudmVybm9uQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjM2Mw0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
