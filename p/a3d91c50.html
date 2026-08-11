@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Jay Bautista',
-    'department':'Community',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Jay Bautista','department':'Community','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Jay Bautista','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Jay Bautista</h1>
     <p class="sub">Senior Community Fundraising Coordinator</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Community</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKYXkgQmF1dGlzdGENCk46QmF1dGlzdGE7SmF5Ozs7DQpPUkc6SG91c3RvbiBUZXhhbnM7Q29tbXVuaXR5DQpUSVRMRTpTZW5pb3IgQ29tbXVuaXR5IEZ1bmRyYWlzaW5nIENvb3JkaW5hdG9yDQpFTUFJTDpqYXkuYmF1dGlzdGFAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTkyDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKYXkgQmF1dGlzdGENCk46QmF1dGlzdGE7SmF5Ozs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlNlbmlvciBDb21tdW5pdHkgRnVuZHJhaXNpbmcgQ29vcmRpbmF0b3INCkVNQUlMOmpheS5iYXV0aXN0YUBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIxOTINClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
