@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Hannah Petersen',
-    'department':'Nutrition and Wellness',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Hannah Petersen','department':'Nutrition and Wellness','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Hannah Petersen','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Hannah Petersen</h1>
     <p class="sub">Assistant Wellness and Performance Nutrition Dietitian</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Nutrition and Wellness</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpIYW5uYWggUGV0ZXJzZW4NCk46UGV0ZXJzZW47SGFubmFoOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7TnV0cml0aW9uIGFuZCBXZWxsbmVzcw0KVElUTEU6QXNzaXN0YW50IFdlbGxuZXNzIGFuZCBQZXJmb3JtYW5jZSBOdXRyaXRpb24gRGlldGl0aWFuDQpFTUFJTDpoYW5uYWgucGV0ZXJzZW5AaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMjI1DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpIYW5uYWggUGV0ZXJzZW4NCk46UGV0ZXJzZW47SGFubmFoOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOkFzc2lzdGFudCBXZWxsbmVzcyBhbmQgUGVyZm9ybWFuY2UgTnV0cml0aW9uIERpZXRpdGlhbg0KRU1BSUw6aGFubmFoLnBldGVyc2VuQGhvdXN0b250ZXhhbnMuY29tDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjIyNQ0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
