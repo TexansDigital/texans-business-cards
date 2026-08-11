@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Anita Martin',
-    'department':'Human Resources',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Anita Martin','department':'Human Resources','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Anita Martin','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Anita Martin</h1>
     <p class="sub">Vice President, Human Resources</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Human Resources</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpBbml0YSBNYXJ0aW4NCk46TWFydGluO0FuaXRhOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7SHVtYW4gUmVzb3VyY2VzDQpUSVRMRTpWaWNlIFByZXNpZGVudCwgSHVtYW4gUmVzb3VyY2VzDQpFTUFJTDphbml0YS5tYXJ0aW5AaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMDE5DQpURUw7VFlQRT1DRUxMOisxLTgzMi05MTctOTE1OA0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpBbml0YSBNYXJ0aW4NCk46TWFydGluO0FuaXRhOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlZpY2UgUHJlc2lkZW50LCBIdW1hbiBSZXNvdXJjZXMNCkVNQUlMOmFuaXRhLm1hcnRpbkBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIwMTkNClRFTDtUWVBFPUNFTEw6KzEtODMyLTkxNy05MTU4DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
