@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Matthew Jones',
-    'department':'Information Technology',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Matthew Jones','department':'Information Technology','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Matthew Jones','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Matthew Jones</h1>
     <p class="sub">Senior Director of IT Operations</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Information Technology</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNYXR0aGV3IEpvbmVzDQpOOkpvbmVzO01hdHRoZXc7OzsNCk9SRzpIb3VzdG9uIFRleGFucztJbmZvcm1hdGlvbiBUZWNobm9sb2d5DQpUSVRMRTpTZW5pb3IgRGlyZWN0b3Igb2YgSVQgT3BlcmF0aW9ucw0KRU1BSUw6bWF0dGhldy5qb25lc0Bob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIxMjENClRFTDtUWVBFPUNFTEw6KzEtODMyLTQ1Ny01MjI1DQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpNYXR0aGV3IEpvbmVzDQpOOkpvbmVzO01hdHRoZXc7OzsNCk9SRzpIb3VzdG9uIFRleGFucw0KVElUTEU6U2VuaW9yIERpcmVjdG9yIG9mIElUIE9wZXJhdGlvbnMNCkVNQUlMOm1hdHRoZXcuam9uZXNAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTIxDQpURUw7VFlQRT1DRUxMOisxLTgzMi00NTctNTIyNQ0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
