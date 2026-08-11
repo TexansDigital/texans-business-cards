@@ -16,10 +16,9 @@
   gtag('js',new Date());
   gtag('config','G-DFLYVN1338',{
     'employee_name':'Zach Tarrant',
-    'department':'Photography',
     'brand':'texans'
   });
-  function tr(n){gtag('event',n,{'employee_name':'Zach Tarrant','department':'Photography','brand':'texans'});}
+  function tr(n){gtag('event',n,{'employee_name':'Zach Tarrant','brand':'texans'});}
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -62,7 +61,6 @@
     <div class="hero-img"><img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston%20Texans%20Logo%20RGB_BULLHEAD%20FC.png" alt="" style="height:64px;object-fit:contain;"></div>
     <h1>Zach Tarrant</h1>
     <p class="sub">Senior Photography Manager</p>
-    <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;">Photography</div>
     <span class="org">Houston Texans</span>
   </div>
   <div class="ct">
@@ -99,7 +97,7 @@
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpaYWNoIFRhcnJhbnQNCk46VGFycmFudDtaYWNoOzs7DQpPUkc6SG91c3RvbiBUZXhhbnM7UGhvdG9ncmFwaHkNClRJVExFOlNlbmlvciBQaG90b2dyYXBoeSBNYW5hZ2VyDQpFTUFJTDp6YWNoLnRhcnJhbnRAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMDQ4DQpURUw7VFlQRT1DRUxMOisxLTgzMi02NTUtMDE0NA0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpaYWNoIFRhcnJhbnQNCk46VGFycmFudDtaYWNoOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlNlbmlvciBQaG90b2dyYXBoeSBNYW5hZ2VyDQpFTUFJTDp6YWNoLnRhcnJhbnRAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMDQ4DQpURUw7VFlQRT1DRUxMOisxLTgzMi02NTUtMDE0NA0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
