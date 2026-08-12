@@ -10,7 +10,7 @@
   <text x="30" y="170" font-family="TexSans-Black, Arial Black, sans-serif" font-size="40" fill="#FFFFFF">Kayla Rumbaugh</text>
   
   <!-- Job Title -->
-  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="25" fill="#FFFFFF">Senior Financial Analyst (PT)</text>
+  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="28" fill="#FFFFFF">Senior Financial Analyst</text>
   
   <!-- Email label -->
   <text x="30" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Email</text>
