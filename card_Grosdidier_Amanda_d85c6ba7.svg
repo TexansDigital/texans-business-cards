@@ -10,8 +10,8 @@
   <text x="30" y="170" font-family="TexSans-Black, Arial Black, sans-serif" font-size="34" fill="#FFFFFF">Amanda Grosdidier</text>
   
   <!-- Job Title -->
-  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="20" fill="#FFFFFF">Executive Director of Houston Texans</text>
-    <text x="30" y="254" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="20" fill="#FFFFFF">Foundation and Community</text>
+  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Executive Director of the Houston Texans</text>
+    <text x="30" y="251.6" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Foundation and Community</text>
   
   <!-- Email label -->
   <text x="30" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Email</text>
