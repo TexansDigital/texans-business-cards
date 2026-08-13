@@ -48,6 +48,7 @@
     .ft{text-align:center;padding-top:16px;margin-top:8px;border-top:1px solid #e5e7eb}
     .ft img{height:18px;opacity:.25;margin-bottom:6px}
     .ft p{font-size:0.7rem;color:#9ca3af}
+    .ft .adr{margin-top:5px;line-height:1.55}
     .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#021018;color:#fff;padding:12px 24px;border-radius:10px;font-size:.85rem;font-weight:500;opacity:0;transition:transform .3s,opacity .3s;z-index:100}
     .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
   </style>
@@ -90,14 +91,15 @@
     </div>
     <div class="ft">
       <img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston_Texans_Logo_RGB_WRD_MRK%20FC.png" alt="">
-      <p>Reliant Stadium &middot; Houston, Texas</p>
+      <p>Houston Texans</p>
+      <p class="adr">Reliant Stadium<br>Two Reliant Park<br>Houston, TX 77054-1573</p>
     </div>
   </div>
   <div class="toast" id="toast">Contact saved</div>
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpDaHJpcyBTY2huYWJlbA0KTjpTY2huYWJlbDtDaHJpczs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zDQpUSVRMRTpTZW5pb3IgQ29udGVudCBNYW5hZ2VyDQpFTUFJTDpjaHJpcy5zY2huYWJlbEBob3VzdG9udGV4YW5zLmNvbQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIzNzYNClVSTDpodHRwczovL3d3dy5ob3VzdG9udGV4YW5zLmNvbS8NCkVORDpWQ0FSRA==')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpDaHJpcyBTY2huYWJlbA0KTjpTY2huYWJlbDtDaHJpczs7Ow0KT1JHOkhvdXN0b24gVGV4YW5zDQpUSVRMRTpTZW5pb3IgQ29udGVudCBNYW5hZ2VyDQpFTUFJTDpjaHJpcy5zY2huYWJlbEBob3VzdG9udGV4YW5zLmNvbQ0KQURSO1RZUEU9V09SSzo7O1JlbGlhbnQgU3RhZGl1bVxuVHdvIFJlbGlhbnQgUGFyaztIb3VzdG9uO1RYOzc3MDU0LTE1NzM7VVNBDQpURUw7VFlQRT1XT1JLOisxLTgzMi02NjctMjM3Ng0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
