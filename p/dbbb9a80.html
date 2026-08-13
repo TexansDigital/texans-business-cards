@@ -48,6 +48,7 @@
     .ft{text-align:center;padding-top:16px;margin-top:8px;border-top:1px solid #e5e7eb}
     .ft img{height:18px;opacity:.25;margin-bottom:6px}
     .ft p{font-size:0.7rem;color:#9ca3af}
+    .ft .adr{margin-top:5px;line-height:1.55}
     .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#021018;color:#fff;padding:12px 24px;border-radius:10px;font-size:.85rem;font-weight:500;opacity:0;transition:transform .3s,opacity .3s;z-index:100}
     .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
   </style>
@@ -90,14 +91,15 @@
     </div>
     <div class="ft">
       <img src="https://raw.githubusercontent.com/TexansDigital/texans-business-cards/main/Houston_Texans_Logo_RGB_WRD_MRK%20FC.png" alt="">
-      <p>Reliant Stadium &middot; Houston, Texas</p>
+      <p>Houston Texans</p>
+      <p class="adr">Reliant Stadium<br>Two Reliant Park<br>Houston, TX 77054-1573</p>
     </div>
   </div>
   <div class="toast" id="toast">Contact saved</div>
   <script>
   function saveContact(){
     tr('save_contact');
-    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKZWZmIFNjaG1pdHoNCk46U2NobWl0ejtKZWZmOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlZpY2UgUHJlc2lkZW50IGFuZCBDaGllZiBJbmZvcm1hdGlvbiBPZmZpY2VyDQpFTUFJTDpqZWZmLnNjaG1pdHpAaG91c3RvbnRleGFucy5jb20NClRFTDtUWVBFPVdPUks6KzEtODMyLTY2Ny0yMTMwDQpURUw7VFlQRT1DRUxMOisxLTgzMi02NDItMTcxMw0KVVJMOmh0dHBzOi8vd3d3LmhvdXN0b250ZXhhbnMuY29tLw0KRU5EOlZDQVJE')));
+    var vc=decodeURIComponent(escape(atob('QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpKZWZmIFNjaG1pdHoNCk46U2NobWl0ejtKZWZmOzs7DQpPUkc6SG91c3RvbiBUZXhhbnMNClRJVExFOlZpY2UgUHJlc2lkZW50IGFuZCBDaGllZiBJbmZvcm1hdGlvbiBPZmZpY2VyDQpFTUFJTDpqZWZmLnNjaG1pdHpAaG91c3RvbnRleGFucy5jb20NCkFEUjtUWVBFPVdPUks6OztSZWxpYW50IFN0YWRpdW1cblR3byBSZWxpYW50IFBhcms7SG91c3RvbjtUWDs3NzA1NC0xNTczO1VTQQ0KVEVMO1RZUEU9V09SSzorMS04MzItNjY3LTIxMzANClRFTDtUWVBFPUNFTEw6KzEtODMyLTY0Mi0xNzEzDQpVUkw6aHR0cHM6Ly93d3cuaG91c3RvbnRleGFucy5jb20vDQpFTkQ6VkNBUkQ=')));
     var b=new Blob([vc],{type:'text/vcard;charset=utf-8'});
     var u=URL.createObjectURL(b);
     var a=document.createElement('a');
