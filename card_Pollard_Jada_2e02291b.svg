@@ -10,7 +10,7 @@
   <text x="30" y="170" font-family="TexSans-Black, Arial Black, sans-serif" font-size="42" fill="#FFFFFF">Jada Pollard</text>
   
   <!-- Job Title -->
-  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="23" fill="#FFFFFF">Director of Membership Services</text>
+  <text x="30" y="230" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="24" fill="#FFFFFF">Director of Membership Service</text>
   
   <!-- Email label -->
   <text x="30" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF">Email</text>
@@ -19,10 +19,10 @@
   <text x="30" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF">Jada.Pollard@houstontexans.com</text>
   
   <!-- Phone Label -->
-  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="end">Mobile</text>
+  <text x="570" y="350" font-family="TexSans-Bold, Arial, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="end">Office</text>
   
   <!-- Phone Number -->
-  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF" text-anchor="end">832-523-8872</text>
+  <text x="570" y="370" font-family="TexSans-SemiBold, Arial, sans-serif" font-size="22" fill="#FFFFFF" text-anchor="end">832-667-2152</text>
   
   <!-- Top Right Image -->
   
